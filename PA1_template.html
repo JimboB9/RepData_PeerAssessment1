@@ -206,7 +206,21 @@ hr {
 <h2>Loading and preprocessing the data</h2>
 
 <pre><code class="r">library(dplyr)
-library(lattice)
+</code></pre>
+
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;
+## 
+## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter
+## 
+## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union
+</code></pre>
+
+<pre><code class="r">library(lattice)
 options(scipen=10)
 data &lt;- read.csv(paste0(getwd(),&quot;/activity.csv&quot;))
 by_day &lt;- group_by(data, date)
